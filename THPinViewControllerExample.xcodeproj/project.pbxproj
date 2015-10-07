@@ -7,10 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2075FE01A160CCB0018078F /* THPinViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2075FDF1A160CCB0018078F /* THPinViewController.bundle */; };
+		BC79B2741BC5168B00185C54 /* THPinViewControllerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC79B2731BC5168B00185C54 /* THPinViewControllerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC79B2861BC5168B00185C54 /* THPinViewControllerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC79B26F1BC5168B00185C54 /* THPinViewControllerKit.framework */; };
+		BC79B2871BC5168B00185C54 /* THPinViewControllerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC79B26F1BC5168B00185C54 /* THPinViewControllerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC79B2901BC517C400185C54 /* THPinInputCirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2742FC619043A27003EF85C /* THPinInputCirclesView.m */; };
+		BC79B2921BC517C400185C54 /* THPinInputCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E26048DA19027DBC006ACBC7 /* THPinInputCircleView.m */; };
+		BC79B2941BC517C400185C54 /* THPinNumButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E26048D819027DBC006ACBC7 /* THPinNumButton.m */; };
+		BC79B2961BC517C400185C54 /* THPinNumPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2742FC319043598003EF85C /* THPinNumPadView.m */; };
+		BC79B2981BC517C400185C54 /* THPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2742FCA19058BCA003EF85C /* THPinView.m */; };
+		BC79B29A1BC517C400185C54 /* THPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26048DC19027DBC006ACBC7 /* THPinViewController.m */; };
+		BC79B29E1BC517C400185C54 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C5FC4192CBF010073E612 /* UIImage+ImageEffects.m */; };
+		BC79B29F1BC5181400185C54 /* THPinViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2075FDF1A160CCB0018078F /* THPinViewController.bundle */; };
+		BC79B2A01BC5185C00185C54 /* THPinInputCirclesView.h in Headers */ = {isa = PBXBuildFile; fileRef = E2742FC519043A27003EF85C /* THPinInputCirclesView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BC79B2A11BC5185C00185C54 /* THPinInputCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = E26048D919027DBC006ACBC7 /* THPinInputCircleView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BC79B2A21BC5185C00185C54 /* THPinNumButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E26048D719027DBC006ACBC7 /* THPinNumButton.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BC79B2A31BC5185C00185C54 /* THPinNumPadView.h in Headers */ = {isa = PBXBuildFile; fileRef = E2742FC219043598003EF85C /* THPinNumPadView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BC79B2A41BC5185C00185C54 /* THPinView.h in Headers */ = {isa = PBXBuildFile; fileRef = E2742FC919058BCA003EF85C /* THPinView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BC79B2A51BC5185C00185C54 /* THPinViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E26048DB19027DBC006ACBC7 /* THPinViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC79B2A61BC5185C00185C54 /* THPinViewControllerMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E24B76CC195D674F00705E35 /* THPinViewControllerMacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BC79B2A71BC5185C00185C54 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = E25C5FC3192CBF010073E612 /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E222D1FD1902F00900DD1762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E222D1FB1902F00900DD1762 /* Main.storyboard */; };
 		E25C5FBF192C993F0073E612 /* confidential@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E25C5FBE192C993F0073E612 /* confidential@2x.png */; };
-		E25C5FC5192CBF010073E612 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C5FC4192CBF010073E612 /* UIImage+ImageEffects.m */; };
 		E26048A219027D01006ACBC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26048A119027D01006ACBC7 /* Foundation.framework */; };
 		E26048A419027D01006ACBC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26048A319027D01006ACBC7 /* CoreGraphics.framework */; };
 		E26048A619027D01006ACBC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26048A519027D01006ACBC7 /* UIKit.framework */; };
@@ -19,30 +36,36 @@
 		E26048B219027D01006ACBC7 /* THAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E26048B119027D01006ACBC7 /* THAppDelegate.m */; };
 		E26048B819027D01006ACBC7 /* THViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26048B719027D01006ACBC7 /* THViewController.m */; };
 		E26048BA19027D01006ACBC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26048B919027D01006ACBC7 /* Images.xcassets */; };
-		E26048C119027D01006ACBC7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26048C019027D01006ACBC7 /* XCTest.framework */; };
-		E26048C219027D01006ACBC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26048A119027D01006ACBC7 /* Foundation.framework */; };
-		E26048C319027D01006ACBC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26048A519027D01006ACBC7 /* UIKit.framework */; };
-		E26048CB19027D01006ACBC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E26048C919027D01006ACBC7 /* InfoPlist.strings */; };
-		E26048CD19027D01006ACBC7 /* THPinViewControllerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E26048CC19027D01006ACBC7 /* THPinViewControllerExampleTests.m */; };
-		E26048DD19027DBC006ACBC7 /* THPinNumButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E26048D819027DBC006ACBC7 /* THPinNumButton.m */; };
-		E26048DE19027DBC006ACBC7 /* THPinInputCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E26048DA19027DBC006ACBC7 /* THPinInputCircleView.m */; };
-		E26048DF19027DBC006ACBC7 /* THPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26048DC19027DBC006ACBC7 /* THPinViewController.m */; };
-		E2742FC419043598003EF85C /* THPinNumPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2742FC319043598003EF85C /* THPinNumPadView.m */; };
-		E2742FC719043A27003EF85C /* THPinInputCirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2742FC619043A27003EF85C /* THPinInputCirclesView.m */; };
-		E2742FCB19058BCA003EF85C /* THPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2742FCA19058BCA003EF85C /* THPinView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E26048C419027D01006ACBC7 /* PBXContainerItemProxy */ = {
+		BC79B2841BC5168B00185C54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E260489619027D01006ACBC7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E260489D19027D01006ACBC7;
-			remoteInfo = THPinViewControllerExample;
+			remoteGlobalIDString = BC79B26E1BC5168B00185C54;
+			remoteInfo = THPinViewControllerKit;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BC79B28B1BC5168B00185C54 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BC79B2871BC5168B00185C54 /* THPinViewControllerKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BC79B26F1BC5168B00185C54 /* THPinViewControllerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THPinViewControllerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC79B2721BC5168B00185C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC79B2731BC5168B00185C54 /* THPinViewControllerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THPinViewControllerKit.h; sourceTree = "<group>"; };
 		E2075FDF1A160CCB0018078F /* THPinViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = THPinViewController.bundle; sourceTree = "<group>"; };
 		E222D1FC1902F00900DD1762 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E24B76CC195D674F00705E35 /* THPinViewControllerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinViewControllerMacros.h; sourceTree = "<group>"; };
@@ -62,11 +85,7 @@
 		E26048B619027D01006ACBC7 /* THViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THViewController.h; sourceTree = "<group>"; };
 		E26048B719027D01006ACBC7 /* THViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THViewController.m; sourceTree = "<group>"; };
 		E26048B919027D01006ACBC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E26048BF19027D01006ACBC7 /* THPinViewControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THPinViewControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26048C019027D01006ACBC7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E26048C819027D01006ACBC7 /* THPinViewControllerExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "THPinViewControllerExampleTests-Info.plist"; sourceTree = "<group>"; };
-		E26048CA19027D01006ACBC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E26048CC19027D01006ACBC7 /* THPinViewControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THPinViewControllerExampleTests.m; sourceTree = "<group>"; };
 		E26048D719027DBC006ACBC7 /* THPinNumButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinNumButton.h; sourceTree = "<group>"; };
 		E26048D819027DBC006ACBC7 /* THPinNumButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPinNumButton.m; sourceTree = "<group>"; };
 		E26048D919027DBC006ACBC7 /* THPinInputCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinInputCircleView.h; sourceTree = "<group>"; };
@@ -82,35 +101,50 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BC79B26B1BC5168B00185C54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E260489B19027D01006ACBC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC79B2861BC5168B00185C54 /* THPinViewControllerKit.framework in Frameworks */,
 				E26048A419027D01006ACBC7 /* CoreGraphics.framework in Frameworks */,
 				E26048A619027D01006ACBC7 /* UIKit.framework in Frameworks */,
 				E26048A219027D01006ACBC7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E26048BC19027D01006ACBC7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E26048C119027D01006ACBC7 /* XCTest.framework in Frameworks */,
-				E26048C319027D01006ACBC7 /* UIKit.framework in Frameworks */,
-				E26048C219027D01006ACBC7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC79B2701BC5168B00185C54 /* THPinViewControllerKit */ = {
+			isa = PBXGroup;
+			children = (
+				BC79B2731BC5168B00185C54 /* THPinViewControllerKit.h */,
+				E26048D619027DBC006ACBC7 /* THPinViewController */,
+				BC79B2711BC5168B00185C54 /* Supporting Files */,
+			);
+			path = THPinViewControllerKit;
+			sourceTree = "<group>";
+		};
+		BC79B2711BC5168B00185C54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC79B2721BC5168B00185C54 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E260489519027D01006ACBC7 = {
 			isa = PBXGroup;
 			children = (
 				E26048A719027D01006ACBC7 /* THPinViewControllerExample */,
-				E26048C619027D01006ACBC7 /* THPinViewControllerExampleTests */,
-				E26048D619027DBC006ACBC7 /* THPinViewController */,
+				BC79B2701BC5168B00185C54 /* THPinViewControllerKit */,
 				E26048A019027D01006ACBC7 /* Frameworks */,
 				E260489F19027D01006ACBC7 /* Products */,
 			);
@@ -120,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				E260489E19027D01006ACBC7 /* THPinViewControllerExample.app */,
-				E26048BF19027D01006ACBC7 /* THPinViewControllerExampleTests.xctest */,
+				BC79B26F1BC5168B00185C54 /* THPinViewControllerKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,24 +196,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E26048C619027D01006ACBC7 /* THPinViewControllerExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				E26048CC19027D01006ACBC7 /* THPinViewControllerExampleTests.m */,
-				E26048C719027D01006ACBC7 /* Supporting Files */,
-			);
-			path = THPinViewControllerExampleTests;
-			sourceTree = "<group>";
-		};
-		E26048C719027D01006ACBC7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E26048C819027D01006ACBC7 /* THPinViewControllerExampleTests-Info.plist */,
-				E26048C919027D01006ACBC7 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		E26048D619027DBC006ACBC7 /* THPinViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,12 +216,50 @@
 				E25C5FC3192CBF010073E612 /* UIImage+ImageEffects.h */,
 				E25C5FC4192CBF010073E612 /* UIImage+ImageEffects.m */,
 			);
-			path = THPinViewController;
+			name = THPinViewController;
+			path = ../THPinViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BC79B26C1BC5168B00185C54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC79B2741BC5168B00185C54 /* THPinViewControllerKit.h in Headers */,
+				BC79B2A51BC5185C00185C54 /* THPinViewController.h in Headers */,
+				BC79B2A71BC5185C00185C54 /* UIImage+ImageEffects.h in Headers */,
+				BC79B2A01BC5185C00185C54 /* THPinInputCirclesView.h in Headers */,
+				BC79B2A11BC5185C00185C54 /* THPinInputCircleView.h in Headers */,
+				BC79B2A21BC5185C00185C54 /* THPinNumButton.h in Headers */,
+				BC79B2A31BC5185C00185C54 /* THPinNumPadView.h in Headers */,
+				BC79B2A41BC5185C00185C54 /* THPinView.h in Headers */,
+				BC79B2A61BC5185C00185C54 /* THPinViewControllerMacros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		BC79B26E1BC5168B00185C54 /* THPinViewControllerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC79B2881BC5168B00185C54 /* Build configuration list for PBXNativeTarget "THPinViewControllerKit" */;
+			buildPhases = (
+				BC79B26A1BC5168B00185C54 /* Sources */,
+				BC79B26B1BC5168B00185C54 /* Frameworks */,
+				BC79B26C1BC5168B00185C54 /* Headers */,
+				BC79B26D1BC5168B00185C54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = THPinViewControllerKit;
+			productName = THPinViewControllerKit;
+			productReference = BC79B26F1BC5168B00185C54 /* THPinViewControllerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		E260489D19027D01006ACBC7 /* THPinViewControllerExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E26048D019027D01006ACBC7 /* Build configuration list for PBXNativeTarget "THPinViewControllerExample" */;
@@ -213,33 +267,17 @@
 				E260489A19027D01006ACBC7 /* Sources */,
 				E260489B19027D01006ACBC7 /* Frameworks */,
 				E260489C19027D01006ACBC7 /* Resources */,
+				BC79B28B1BC5168B00185C54 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BC79B2851BC5168B00185C54 /* PBXTargetDependency */,
 			);
 			name = THPinViewControllerExample;
 			productName = THPinViewControllerExample;
 			productReference = E260489E19027D01006ACBC7 /* THPinViewControllerExample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E26048BE19027D01006ACBC7 /* THPinViewControllerExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E26048D319027D01006ACBC7 /* Build configuration list for PBXNativeTarget "THPinViewControllerExampleTests" */;
-			buildPhases = (
-				E26048BB19027D01006ACBC7 /* Sources */,
-				E26048BC19027D01006ACBC7 /* Frameworks */,
-				E26048BD19027D01006ACBC7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E26048C519027D01006ACBC7 /* PBXTargetDependency */,
-			);
-			name = THPinViewControllerExampleTests;
-			productName = THPinViewControllerExampleTests;
-			productReference = E26048BF19027D01006ACBC7 /* THPinViewControllerExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -251,8 +289,8 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Thomas Heß";
 				TargetAttributes = {
-					E26048BE19027D01006ACBC7 = {
-						TestTargetID = E260489D19027D01006ACBC7;
+					BC79B26E1BC5168B00185C54 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -274,67 +312,65 @@
 			projectRoot = "";
 			targets = (
 				E260489D19027D01006ACBC7 /* THPinViewControllerExample */,
-				E26048BE19027D01006ACBC7 /* THPinViewControllerExampleTests */,
+				BC79B26E1BC5168B00185C54 /* THPinViewControllerKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BC79B26D1BC5168B00185C54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC79B29F1BC5181400185C54 /* THPinViewController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E260489C19027D01006ACBC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E222D1FD1902F00900DD1762 /* Main.storyboard in Resources */,
 				E25C5FBF192C993F0073E612 /* confidential@2x.png in Resources */,
-				E2075FE01A160CCB0018078F /* THPinViewController.bundle in Resources */,
 				E26048BA19027D01006ACBC7 /* Images.xcassets in Resources */,
 				E26048AC19027D01006ACBC7 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E26048BD19027D01006ACBC7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E26048CB19027D01006ACBC7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BC79B26A1BC5168B00185C54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC79B2901BC517C400185C54 /* THPinInputCirclesView.m in Sources */,
+				BC79B2921BC517C400185C54 /* THPinInputCircleView.m in Sources */,
+				BC79B2941BC517C400185C54 /* THPinNumButton.m in Sources */,
+				BC79B2961BC517C400185C54 /* THPinNumPadView.m in Sources */,
+				BC79B2981BC517C400185C54 /* THPinView.m in Sources */,
+				BC79B29A1BC517C400185C54 /* THPinViewController.m in Sources */,
+				BC79B29E1BC517C400185C54 /* UIImage+ImageEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E260489A19027D01006ACBC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E26048B819027D01006ACBC7 /* THViewController.m in Sources */,
-				E2742FC419043598003EF85C /* THPinNumPadView.m in Sources */,
 				E26048B219027D01006ACBC7 /* THAppDelegate.m in Sources */,
-				E2742FC719043A27003EF85C /* THPinInputCirclesView.m in Sources */,
-				E26048DE19027DBC006ACBC7 /* THPinInputCircleView.m in Sources */,
 				E26048AE19027D01006ACBC7 /* main.m in Sources */,
-				E25C5FC5192CBF010073E612 /* UIImage+ImageEffects.m in Sources */,
-				E26048DF19027DBC006ACBC7 /* THPinViewController.m in Sources */,
-				E26048DD19027DBC006ACBC7 /* THPinNumButton.m in Sources */,
-				E2742FCB19058BCA003EF85C /* THPinView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E26048BB19027D01006ACBC7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E26048CD19027D01006ACBC7 /* THPinViewControllerExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E26048C519027D01006ACBC7 /* PBXTargetDependency */ = {
+		BC79B2851BC5168B00185C54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E260489D19027D01006ACBC7 /* THPinViewControllerExample */;
-			targetProxy = E26048C419027D01006ACBC7 /* PBXContainerItemProxy */;
+			target = BC79B26E1BC5168B00185C54 /* THPinViewControllerKit */;
+			targetProxy = BC79B2841BC5168B00185C54 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -355,17 +391,63 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E26048C919027D01006ACBC7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E26048CA19027D01006ACBC7 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BC79B2891BC5168B00185C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = THPinViewControllerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC79B28A1BC5168B00185C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = THPinViewControllerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E26048CE19027D01006ACBC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -410,7 +492,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +547,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,7 +568,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "THPinViewControllerExample/THPinViewControllerExample-Prefix.pch";
 				INFOPLIST_FILE = "THPinViewControllerExample/THPinViewControllerExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -500,55 +583,24 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "THPinViewControllerExample/THPinViewControllerExample-Prefix.pch";
 				INFOPLIST_FILE = "THPinViewControllerExample/THPinViewControllerExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		E26048D419027D01006ACBC7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/THPinViewControllerExample.app/THPinViewControllerExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "THPinViewControllerExample/THPinViewControllerExample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "THPinViewControllerExampleTests/THPinViewControllerExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		E26048D519027D01006ACBC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/THPinViewControllerExample.app/THPinViewControllerExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "THPinViewControllerExample/THPinViewControllerExample-Prefix.pch";
-				INFOPLIST_FILE = "THPinViewControllerExampleTests/THPinViewControllerExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BC79B2881BC5168B00185C54 /* Build configuration list for PBXNativeTarget "THPinViewControllerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC79B2891BC5168B00185C54 /* Debug */,
+				BC79B28A1BC5168B00185C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E260489919027D01006ACBC7 /* Build configuration list for PBXProject "THPinViewControllerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -563,15 +615,6 @@
 			buildConfigurations = (
 				E26048D119027D01006ACBC7 /* Debug */,
 				E26048D219027D01006ACBC7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E26048D319027D01006ACBC7 /* Build configuration list for PBXNativeTarget "THPinViewControllerExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E26048D419027D01006ACBC7 /* Debug */,
-				E26048D519027D01006ACBC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

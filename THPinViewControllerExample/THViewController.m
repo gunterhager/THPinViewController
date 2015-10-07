@@ -7,7 +7,7 @@
 //
 
 #import "THViewController.h"
-#import "THPinViewController.h"
+@import THPinViewControllerKit;
 
 @interface THViewController () <THPinViewControllerDelegate>
 
